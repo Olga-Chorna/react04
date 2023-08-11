@@ -10,7 +10,7 @@ class UserList extends Component {
   }
 
   sortAlphabetically = () => {
-    const { users } = this.state.users;
+    const { users } = this.state;
     console.log(users);
     const sortedUsers = users.sort(( a, b ) => {
       if (a.fullName > b.fullName) {
@@ -27,14 +27,14 @@ class UserList extends Component {
 
   sortAlphabeticallyReverse = () => {
     debugger;
-    const { users } = this.state.users;
+    const { users } = this.state;
     console.log(users);
     const sortedUsers = users.sort(( a, b ) => {
       if (a.fullName > b.fullName) {
-        return 1;
+        return -1;
       }
       if (a.fullName < b.fullName) {
-        return -1;
+        return 1;
       }
       return 0;
     });
