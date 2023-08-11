@@ -48,7 +48,7 @@ class UserList extends Component {
     const renderButtons =  (
       <div>
         <button onClick={this.sortAlphabetically}>А-я</button>
-        <button onClick={this.sortAlphabeticallyReverse}>Я-а</button>
+        <button onClick={this.sortAlphabeticallyReverse}>Я-A</button>
        </div>
     );
    
